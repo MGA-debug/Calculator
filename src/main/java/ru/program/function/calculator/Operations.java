@@ -1,4 +1,4 @@
-package ru.util;
+package ru.program.function.calculator;
 
 import java.util.Arrays;
 import java.util.List;

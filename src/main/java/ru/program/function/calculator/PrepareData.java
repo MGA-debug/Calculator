@@ -1,4 +1,4 @@
-package ru.util;
+package ru.program.function.calculator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +23,7 @@ public class PrepareData {
             }
         }
         System.err.println("Допустимые операции: +,-,/,*");
+        System.out.println();
         return null;
     }
 
@@ -42,7 +43,7 @@ public class PrepareData {
             try {
                 data.add(Double.valueOf(element));
             } catch (NumberFormatException e) {
-                System.err.println("Введите два числа");
+                System.err.println("Введите два числа. \n");
                 return null;
             }
         }
