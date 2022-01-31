@@ -17,9 +17,6 @@ public class Calculator {
         System.out.println("Калькулято запущен ... \nПример запроса: 1 + 2");
         String data = MyScanner.getScanner().nextLine();
 
-        if (data.equalsIgnoreCase(Command.MENU) || data.equalsIgnoreCase(Command.EXIT)) {
-            return false;
-        }
         String operation = PrepareData.checkAndReturnOperation(data);
         List<Double> parameters = PrepareData.prepareOperands(data);
         if (operation == null || parameters == null) {
